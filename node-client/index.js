@@ -1,6 +1,8 @@
 const os = require("os");
 const io = require("socket.io-client");
-const socket = io("http://localhost:3000");
+const socket = io("http://localhost:3000", {
+  auth: { token: "anwe/dlnaAEAEDKJWLQWOOoiwje;diw" },
+});
 socket.on("connect", () => {
   const nI = os.networkInterfaces();
   let macA;

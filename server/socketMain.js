@@ -3,9 +3,9 @@ const socketMain = (io, pid) => {
     let machineMacA;
     const auth = socket.handshake.auth;
     console.log(auth.token);
-    if (auth.token === "239rfaiskdfvq243EGa4q3wefsdad") {
+    if (auth.token === "anwe/dlnaAEAEDKJWLQWOOoiwje;diw") {
       socket.join("nodeClient");
-    } else if (auth.token === "23jrtiheriufyqwidsf") {
+    } else if (auth.token === "skedwjeowpqpqpwkxpfoekwoiej") {
       socket.join("reactClient");
     } else {
       socket.disconnect();
